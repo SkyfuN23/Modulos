@@ -142,39 +142,43 @@ i.fa-bars {
 }
 
 
-/* Animación para que los elementos aparezcan desde la izquierda */
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+        /* Animaciones con Keyframes */
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
-/* Animación para que los elementos aparezcan desde la derecha */
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
-/* Aplicar la animación a los elementos que deseas */
-.section1 {
-    animation: slideInLeft 1s ease-out; /* Aparecer desde la izquierda */
-}
+        /* Aplicar animaciones a los elementos de la sección 1 */
+        .section1 h3,
+        .section1 h1,
+        .section1 .descripcion,
+        .section1 .div-img,
+        .section1 .modelos-btn {
+            animation: fadeInRight 1s ease-out;
+        }
 
-.section1 h3,
-.section1 h1,
-.section1 .descripcion,
-.section1 div.img,
-.modelos-btn {
-    animation: slideInRight 1s ease-out; /* Aparecer desde la derecha */
-}
+        .section1 .descripcion,
+        .section1 .div-img {
+            animation-delay: 0.5s;
+        }
+
+        .section1 .modelos-btn {
+            animation-delay: 1s;
+        }
