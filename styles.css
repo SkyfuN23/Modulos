@@ -62,10 +62,11 @@ i.fa-bars {
     background-color: black;
     position: absolute;
     z-index: 1;
+    overflow: hidden;
 }
 
 .background img {
-    width: 100%;
+    width: 125%;
     display: block;
     /* Para evitar espacio adicional debajo de la imagen */
     opacity: 50%;
@@ -93,17 +94,39 @@ i.fa-bars {
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.94);
     font-weight: 700;
     line-height: 33.6px;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.section1 div {
+.section1 .descripcion {
     font-size: 12px;
     line-height: 23px;
     text-transform: uppercase;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.67);
     margin: 10px 0;
     margin-right: 25px;
+}
+
+.div-img {
+    text-align: right;
+}
+
+.section1 div img {
+    width: 70%;
+    border: 1px solid white;
+    border-right: none;
+    box-shadow: 0px 2px 4px black;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.modelos-btn {
+    font-size: 13px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #FEA02F;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.548);
 }
 
 .fa-whatsapp {
