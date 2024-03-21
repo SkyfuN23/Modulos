@@ -14,3 +14,13 @@ window.addEventListener('scroll', function() {
 document.querySelector('.menu-icon').addEventListener('click', function() {
     document.querySelector('.menu-items').classList.toggle('active');
 });
+
+// Obtener el icono del menú
+const menuIcon = document.getElementById('menuIcon');
+
+// Agregar evento de clic al icono del menú
+menuIcon.addEventListener('click', function() {
+    // Alternar entre las clases fa-bars y fa-times
+    menuIcon.classList.toggle('fa-bars');
+    menuIcon.classList.toggle('fa-times');
+});
