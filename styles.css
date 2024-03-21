@@ -167,16 +167,15 @@ i.fa-bars {
 }
 
 /* Aplicar la animación a los elementos que deseas */
-.section1 {
-    animation: slideInLeft 1s ease-out; /* Aparecer desde la izquierda */
+.section1 div img{
+    animation: slideInLeft 0.5s ease-out; /* Aparecer desde la izquierda */
 }
 
 .section1 h3,
 .section1 h1,
 .section1 .descripcion,
-.section1 div.img,
 .modelos-btn {
-    animation: slideInRight 1s ease-out; /* Aparecer desde la derecha */
+    animation: slideInRight 0.5s ease-out; /* Aparecer desde la derecha */
 }
 
 /* Animación para hacer crecer el botón de WhatsApp */
@@ -197,5 +196,5 @@ i.fa-bars {
 
 /* Aplicar la animación al botón de WhatsApp */
 .fa-whatsapp {
-    animation: growBubble 1s ease-in; /* Duración y curva de la animación */
+    animation: growBubble 0.8s ease-in; /* Duración y curva de la animación */
 }
